@@ -1,0 +1,38 @@
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "HELLO MY NAME IS AHMED",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "id": "48026814-89a0-4c73-b522-cccbf0ba6b93"
+    },
+    {
+      "type": "ai",
+      "content": "Hello Ahmed, it's nice to meet you. Is there something I can help you with or would you like to chat?",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 43,
+          "total_tokens": 69,
+          "completion_time": 0.033271661,
+          "prompt_time": 0.002715591,
+          "queue_time": 0.090512884,
+          "total_time": 0.035987252
+        },
+        "model_name": "llama-3.1-8b-instant",
+        "system_fingerprint": "fp_8804b970d6",
+        "service_tier": "on_demand",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "id": "run--cbf875ce-24f3-4518-9596-239317076daf-0",
+      "usage_metadata": {
+        "input_tokens": 43,
+        "output_tokens": 26,
+        "total_tokens": 69
+      }
+    }
+  ]
+}
