@@ -4,15 +4,15 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 #-------------- to be solve later -------------------------# 
-# from langgraph.checkpoint.sqlite import SqliteSaver
+from langgraph.checkpoint.sqlite import SqliteSaver
 import sqlite3
 
 
 load_dotenv()
 
 sqlite_conn = sqlite3.connect("checkpoint.sqlite", check_same_thread = False)
-# memory = SqliteSaver(sqlite_conn)
-memory = None
+memory = SqliteSaver(sqlite_conn)
+
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
