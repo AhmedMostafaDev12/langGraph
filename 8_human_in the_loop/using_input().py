@@ -4,6 +4,12 @@ from langgraph.graph import add_messages, StateGraph, END
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
+"""
+this file for get a response review from the user whether it should 
+post the post or not if not it goes to the node of feedback and get 
+the feedback form the user and return to the generate post node 
+if yes it goes to the post node 
+"""
 load_dotenv()
 class State (TypedDict):
     messages: Annotated[list, add_messages]
